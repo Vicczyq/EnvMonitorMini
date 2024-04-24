@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>服务器.png</file>
+    </qresource>
+</RCC>

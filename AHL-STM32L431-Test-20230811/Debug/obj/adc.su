@@ -1,0 +1,5 @@
+adc.c:19:6:adc_init	16	static
+adc.c:98:10:adc_read	8	static
+adc.c:135:10:adc_mid	24	static
+adc.c:157:10:adc_ave	24	static
+adc.c:174:7:adc_mcu_temp	0	static

@@ -1,0 +1,12 @@
+gpio.c:376:6:gpio_clear_allint	0	static
+gpio.c:392:6:gpio_get_port_pin	0	static
+gpio.c:73:6:gpio_set	16	static
+gpio.c:33:6:gpio_init	32	static
+gpio.c:99:9:gpio_get	16	static
+gpio.c:145:6:gpio_reverse	16	static
+gpio.c:174:6:gpio_pull	16	static
+gpio.c:213:6:gpio_enable_int	24	static
+gpio.c:262:6:gpio_disable_int	24	static
+gpio.c:303:6:gpio_drive_strength	16	static
+gpio.c:331:9:gpio_get_int	16	static
+gpio.c:355:6:gpio_clear_int	16	static

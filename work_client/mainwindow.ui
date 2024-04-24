@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>327</width>
+    <height>140</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>主菜单</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <selectedon>:/128.ico</selectedon>
+   </iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>191</width>
+      <height>98</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>环境信息</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>27</y>
+       <width>171</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>温度：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="wd">
+        <property name="text">
+         <string>0℃</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="sd">
+        <property name="text">
+         <string>0%</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>LED:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="led">
+        <property name="text">
+         <string>OFF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>MCU温度：</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>94</width>
+      <height>97</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    border: 1px solid #007bff; /* 蓝色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 5px 15px; /* 按钮内边距 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 悬停时更深的蓝色 */
+}
+
+QPushButton:pressed {
+    background-color: #0056b3; /* 按下时更深的蓝色 */
+    border: 1px solid #0056b3; /* 按下时更深的边框 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>开/关灯</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    border: 1px solid #007bff; /* 蓝色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 5px 15px; /* 按钮内边距 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 悬停时更深的蓝色 */
+}
+
+QPushButton:pressed {
+    background-color: #0056b3; /* 按下时更深的蓝色 */
+    border: 1px solid #0056b3; /* 按下时更深的边框 */
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>手动报警</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    border: 1px solid #007bff; /* 蓝色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 5px 15px; /* 按钮内边距 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 悬停时更深的蓝色 */
+}
+
+QPushButton:pressed {
+    background-color: #0056b3; /* 按下时更深的蓝色 */
+    border: 1px solid #0056b3; /* 按下时更深的边框 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>通信日志</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

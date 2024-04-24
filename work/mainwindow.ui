@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>通信</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <selectedon>:/Downloads/服务器.png</selectedon>
+   </iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>581</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>调试区</string>
+   </property>
+   <widget class="QLabel" name="connect_count">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>290</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>541</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>72</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>通信节点：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>290</y>
+      <width>115</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+    background: #fff;
+    selection-background-color: darkgray;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #E1E1E1, stop:1 #FFFFFF);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前连接数：</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>721</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>操作</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>681</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    border: 1px solid #007bff; /* 蓝色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 5px 15px; /* 按钮内边距 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 悬停时更深的蓝色 */
+}
+
+QPushButton:pressed {
+    background-color: #0056b3; /* 按下时更深的蓝色 */
+    border: 1px solid #0056b3; /* 按下时更深的边框 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>LED开/关</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>681</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>定时应用：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTimeEdit" name="timeEdit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="displayFormat">
+        <string>H:mm:ss</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="minimumSize">
+        <size>
+         <width>115</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+    background: #fff;
+    selection-background-color: darkgray;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #E1E1E1, stop:1 #FFFFFF);
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>LED开</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LED关</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    border: 1px solid #007bff; /* 蓝色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 5px 15px; /* 按钮内边距 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 悬停时更深的蓝色 */
+}
+
+QPushButton:pressed {
+    background-color: #0056b3; /* 按下时更深的蓝色 */
+    border: 1px solid #0056b3; /* 按下时更深的边框 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>确认</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>上位机定时关闭：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTimeEdit" name="timeEdit_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="displayFormat">
+        <string>H:mm:ss</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    border: 1px solid #007bff; /* 蓝色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 5px 15px; /* 按钮内边距 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 悬停时更深的蓝色 */
+}
+
+QPushButton:pressed {
+    background-color: #0056b3; /* 按下时更深的蓝色 */
+    border: 1px solid #0056b3; /* 按下时更深的边框 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>确认</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="combox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>121</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>状态区</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>98</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>IP:127.0.0.1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>端口:5555</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>正在监听...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="temperature">
+       <property name="text">
+        <string>温度：0℃</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="humidity">
+       <property name="text">
+        <string>MCU：0%</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="LED">
+       <property name="text">
+        <string>LED: OFF</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="warn">
+       <property name="text">
+        <string>报警：否</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

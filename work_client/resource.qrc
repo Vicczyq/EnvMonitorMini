@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>128.ico</file>
+        <file>warning.png</file>
+        <file>密码.png</file>
+        <file>账号信息.png</file>
+        <file>welcome.jpg</file>
+    </qresource>
+</RCC>
