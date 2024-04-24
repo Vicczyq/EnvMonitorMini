@@ -6,8 +6,8 @@
 
 ## 文件说明
 
-**work：**服务端文件夹
+work：服务端文件夹
 
-**work_client：**客户端(上位机)文件
+work_client：客户端(上位机)文件
 
-**Board：**STM32L431开发板项目源码
+Board：STM32L431开发板项目源码
